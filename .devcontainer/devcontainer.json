@@ -1,0 +1,19 @@
+{
+  "name": "Node.js",
+  "build": {
+    "dockerfile": "./Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "xabikos.JavaScriptSnippets",
+        "oderwat.indent-rainbow",
+        "dsznajder.es7-react-js-snippets"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g npm@9.8.1"
+}
