@@ -1,13 +1,14 @@
-import React from 'react';
-import ReactDom from 'react-dom'
-
-class Layout extends React.Component {
-    render() {
-        return (
-            <h1>Welcome!</h1>
-        );
-    }
+import Title from './components/Title'
+import Summary from './components/summary'
+import Description from './components/Description'
+import Form from './components/form'
+export default function Test() {
+  return (
+    <>
+      <Title/>
+      <Summary/>
+      <Description/>
+      <Form defText="test" defCount={1}/>
+    </>
+  );
 }
-
-const app = document.getElementById('app');
-ReactDom.render(<Layout/>, app);
